@@ -1,92 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-		<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="사빈 - 프로필 링크">
-    <meta property="og:description" content="안뇽하세용">
-    <meta property="og:image" content="랙돌.jpg">
-    <title>르탄이 - 프로필 링크</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>결혼 청첩장</title>
     <style>
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
         * {
-            font-family: "Pretendard",serif;
-}
-
-        body {
-            background-color: #ffbbc6;
+            font-family: 'IBM Plex Sans KR', sans-serif;
         }
-        .profile {
-            width: 100px;
-            height: 100px;
-            
-            border-radius: 100%;
-            border: 2px solid white;
-
-            background-image: url('랙돌.jpg');
-            background-position: center;
-            background-size: cover;
-        }
-        .main {
-            color: white;
-            font-size: 20px;
-
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-        .sub {
-            color: white;
-            font-size: 14px;
-
-            margin-top: 0px;
-            margin-bottom: 30px;
+        body, h1, h2, h3, p, a {
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            font-weight: normal;
         }
         .wrap {
-            width: 300px;
-            margin: 30px auto 0px auto;
-            
+            width: 350px;
+            margin: auto;
+        }
+
+        .wrap > h1 {
+            background-color: pink;
+            color: white;
+            padding: 16px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .pic {
+            color: pink;
+            letter-spacing:3px;
+
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+
+            margin-top: 30px;
         }
-        .wrap > a {
-            width: 300px;
-            height: 50px;
 
-            background-color: white;
-            border-radius: 8px;
-
+        .pic > img {
+            width: 250px;
+            border: 3px solid pink;
+            margin-top: 10px;
             margin-bottom: 10px;
+        }
 
-            font-size: 14px;
-            font-weight: bold;
-            color: #ffbbc6;
+        .name {
+            color: pink;
+            font-size: 24px;
+            font-weight: 500;
+            border-top: 1px solid pink;
+            border-bottom: 1px solid pink;
+            width: 200px;
+            margin: 30px auto 30px auto;
+            text-align: center;
+        }
 
+        .main {
+            
+            background-color: pink;
+            color: white;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .msg {
+            line-height: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .place {
+            text-align: center;
+        }
+
+        .bottom {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
 
-            text-decoration: none;
-
-            box-shadow: 3px 3px 5px 0px rgb(243, 232, 232);
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
-        .wrap > a:hover {
-            background-color: #f2f2f2;
+
+        .bottom > p {
+            color: pink;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .bottom > input {
+            width: 250px;
+            margin-bottom: 10px;
+        }
+
+        .bottom > textarea {
+            width: 250px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .bottom > button {
+            border: none;
+            width: 150px;
+            height: 40px;
+            background-color: pink;
+            color: white;
+            border-radius: 8px;
         }
 
     </style>
 </head>
 <body>
     <div class="wrap">
-        <div class="profile"></div>
-        <h1 class="main">사빈</h1>
-        <p class="sub">사빈이 링크트리</p>
-        <a target="_blank" href="https://www.instagram.com/dl_unicorn">인스타그램</a>
-        <a target="_blank" href="https://hanghae99.spartacodingclub.kr/">항해99</a>
+        <h1>영희와 철수의 첫 시작을 축하해주세요</h1>
+        <div class="pic">
+            <h2>Save The Date</h2>
+            <img src="wedding.png">
+            <span>12.31.SUNDAY.PM.12:30</span>
+        </div>
+        <div class="name">
+            김영희 & 이철수
+        </div>
+        <div class="main">
+            <p class="title">INVITATION</p>
+            <p class="msg">
+                서로 다른 두 사람이 만나<br/>
+                사랑으로 하나 되는 자리에<br/>
+                소중한 여러분들을 초대합니다.<br/>
+                기쁠 때나, 슬플 때나<br/>
+                서로를 사랑으로 품으며<br/>
+                행복의 계단을 쌓아가겠습니다.<br/>
+                저희의 첫 시작을 함께 해주신다면<br/>
+                감사한 마음 깊이 간직하며 잘 살겠습니다.
+                </p>
+             <p class="place">
+                2023. 12. 31. SUN. PM 12:30<br/>
+                스파르타웨딩 르탄홀
+        </div>
+        <div class="bottom">
+            <p>축하메세지를 남겨주세요</p>
+            <input type="text" placeholder="이름">
+            <textarea placeholder="메세지를 남겨주세요"></textarea>
+            <button>메세지 남기기</button>
+        </div>
     </div>
-
 </body>
 </html>
